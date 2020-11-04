@@ -1,0 +1,115 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* backend.css - Style speziell für den Backend-Bereich, z.B. Speedbuttons.
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	
+	font-size: 62.5%;
+	
+	background: #dbdbdb;
+	color: #000000;
+	
+	cursor: default;
+}
+
+div#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: calc(5rem+1px);
+	
+	text-align: left;
+	background: #003366;
+	
+	box-shadow: 0 0 2.5rem #000000;
+	
+	transition: all 250ms;
+}
+
+div#content {
+	margin: 1rem;
+	margin-top: 6rem;
+} 
+
+div#content button.buttonlist {
+	background: #ffffff;
+	
+	margin-bottom: 1rem;
+	
+	border: 1px solid #000000;
+	color: #003366;
+	
+	font-size: 2rem;
+	
+	margin-left: 1rem;
+	margin-right: 1rem;
+	
+	padding: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	
+	transition: all 250ms;
+}
+
+div#content button.buttonlist:hover {
+	border-color: #000000;
+	color: #ffffff;
+	background: #003366;
+	cursor: pointer;
+}
+
+div#content div#headerbox {
+	display: inline-block;
+	
+	padding: 1rem;
+	border: 3px solid #003366;
+	
+	margin-top: 1rem;
+	
+	font-size: 4rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+div#content div.line {
+	text-align: center;
+}
+
+div#content div.line button.speedbutton p {
+	transition: all 750ms;
+	margin-top: 1rem;
+}
+
+div#content div.line button.speedbutton {
+	color: #004B96;
+	border: thick;
+	margin: 1.5rem;
+	background-color: white;
+	width: 20rem;
+	height: 20rem;
+	font-size: 8rem;
+	transition: all 250ms;
+	border: 2px solid #ffffff;
+	border-radius: 1rem;
+}
+
+div#content div.line button.speedbutton:hover {
+	box-shadow: 0 0 2rem black;
+	border-color: #004b96;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+div#content textarea#log {
+	background: #ffffff;
+	border: 1px solid #000000;
+	resize: none;
+	width: 100%;
+	height: 100%;
+}

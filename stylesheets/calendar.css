@@ -1,0 +1,102 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* calendar.css - Calendar Design in Frontend.
+*/
+
+div#content div#page div#calendar table {
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+}
+
+div#content div#page div#calendar table td {
+	background: #ebebeb;
+	border: 1px solid #000000;
+	vertical-align: top;
+	padding: 0;
+}
+
+div#content div#page div#calendar table td.top {
+	font-family: 'Raleway';
+	font-size: 2rem;
+	text-decoration: underline;
+	
+	padding: 1rem;
+}
+
+div#content div#page div#calendar table td.disabled {
+	background: #dbdbdb;
+}
+
+div#content div#page div#calendar table td.today {
+	background: #79d279;
+}
+
+div#content div#page div#calendar table td button {
+	position: relative;
+	
+	float: right;
+	
+	top: 0;
+	left: 0;
+	
+	background: #ffffff;
+	color: #000000;
+	
+	font-size: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	
+	width: 3rem;
+	height: 2.5rem;
+	
+	border: 1px solid #000000;
+	
+	transition: all 250ms;
+}
+
+div#content div#page div#calendar table td button.plus {
+	border-top: 0;
+	border-right: 0;
+}
+
+div#content div#page div#calendar table td button:hover {
+	background: #c03030;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+div#content div#page div#calendar table td button i {
+	transform: scale(0.9);
+}
+
+div#content div#page div#calendar table td p {
+	font-size: 1.5rem;
+	margin: 1rem;
+}
+
+div#content div#page div#calendar table td fieldset {
+	border: 0;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	padding: 1rem;
+}
+
+div#content div#page div#calendar table td fieldset dt {
+	font-size: 1.5rem;
+}
+
+div#content div#page div#calendar table td fieldset legend {
+	
+}
+
+div#content div#page div#calendar table td fieldset legend p {
+	float: left;
+	font-size: 1.5rem;
+	margin: 0.4rem;
+}

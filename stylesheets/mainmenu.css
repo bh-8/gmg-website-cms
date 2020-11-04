@@ -1,0 +1,96 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* mainmenu.css - Menü im Frontend.
+*/
+
+nav {
+	position: fixed;
+	top: 5rem;
+	width: 60vw;
+	height: 5rem;
+	
+	text-align: left;
+	background: #c03030;
+	
+	transition: all 250ms;
+	
+	border-radius: 0.5rem;
+	
+	z-index: 999;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	
+	transition: all 250ms;
+}
+
+nav ul li {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: left;
+	
+	list-style: none;
+	
+	transition: all 250ms;
+}
+
+nav ul li img {
+	width: 4.2rem;
+	padding: 0.4rem;
+	border-radius: 0.8rem;
+}
+
+nav ul li img:hover {
+	cursor: pointer;
+}
+
+nav ul li a {
+	display: inline-block;
+	min-width: 15rem;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 1.5rem;
+	
+	text-align: center;
+	font-size: 1.7rem;
+	
+	background: #c03030;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	
+	transition: all 250ms;
+}
+
+nav ul li:hover > a {
+	background: #8e3030;
+	box-shadow: 0 0 2.5rem #c03030 inset;
+}
+
+nav ul li ul {
+	overflow: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	max-height: 0;
+	
+	transition: all 500ms;
+}
+
+nav ul li:hover > ul {
+	max-height: calc(100%*5.2);
+}
+
+nav ul li ul li {
+	border-bottom: 1px solid #ffffff;
+}

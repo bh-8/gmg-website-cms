@@ -1,0 +1,64 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* mainforms.css - Frontend-Formulare.
+*/
+
+form label {
+	display: inline-block;
+	width: 25rem;
+	
+	font-size: 2rem;
+	text-decoration: underline #ebebeb;
+	color: #c03030;
+	margin: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+form input, form select {
+	display: inline-block;
+	
+	margin: 1rem;
+	width: calc(100% - 35rem);
+	font-size: 2rem;
+	padding: 1rem;
+	
+	background: #ffffff;
+	color: #c03030;
+	border: 1px solid #000000;
+	
+	box-shadow: 0 0 0.75rem rgba(0,0,0,0.5) inset;
+	
+	transition: all 250ms;
+}
+
+form input[type=checkbox] {
+	width: 1rem;
+}
+
+form input[type=checkbox]:checked {
+	box-shadow: 0 0 3px 3px #c03030;
+}
+
+form select[multiple] {
+	display: block;
+	width: calc(100% - 2rem);
+	height: 30rem;
+}
+
+form input:focus, form input[type=button]:hover, form input[type=submit]:hover, form select:focus {
+	background: #c03030;
+	color: #ffffff;
+}
+
+form input[type=button], form input[type=submit] {
+	text-decoration: underline #000000;
+}
+
+form input[type=button]:hover, form input[type=submit]:hover, form select:focus {
+	cursor: pointer;
+	text-decoration-color: #ffffff;
+}

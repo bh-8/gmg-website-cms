@@ -1,0 +1,57 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* tables.css - Tabellen im Backend.
+*/
+
+div#content table {
+	width: 100%;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+div#content td{
+	border: 1px solid #000000;
+}
+
+div#content table.page tr td {
+	border-top: 1px solid #000000;
+}
+
+div#content table tr td {
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	
+	padding: 1rem;
+	margin: 0;
+	
+	border-top: 0;
+}
+
+div#content table tr td.top {
+	font-size: 2.5rem;
+	text-decoration: underline;
+}
+
+div#content table tr td a {
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	
+	color: #003366;
+	
+	padding: 0;
+	margin: 0;
+	
+	transition: all 250ms;
+}
+
+div#content table tr td a:hover {
+	text-shadow: 0.125rem 0.125rem 0.125rem #000000;
+	
+	cursor: pointer;
+}

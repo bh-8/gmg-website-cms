@@ -1,0 +1,175 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* responsive.css - Regelt das Design der Website auf mobilen Endgeräten.
+*/
+
+button.menubutton {
+	display: none;
+}
+
+button.menubutton i {
+	transition: all 250ms;
+}
+
+@media screen and (max-width: 1600px) {
+	html, body {
+		font-size: 55%;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	html, body {
+		font-size: 55%;
+	}
+	div#main_left {
+		display: none;
+	}
+	div#main_right {
+		display: none;
+	}
+	div#main_center {
+		left: 0;
+		width: 100vw;
+	}
+	nav {
+		left: 2.5rem;
+		width: calc(100vw - 5rem);
+	}
+}
+
+@media screen and (max-width: 900px) {
+	html, body {
+		font-size: 55%;
+	}
+	button.menubutton {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 5rem;
+		background: #c03030;
+		border: 0;
+		border-bottom: 1px solid #000000;
+		color: #ffffff;
+		transition: all 250ms;
+	}
+	button.menubutton:hover {
+		background: #8e3030;
+		box-shadow: 0 0 2.5rem #c03030 inset;
+		cursor: pointer;
+	}
+	nav {
+		display: none;
+		background: #ebebeb;
+		
+		top: 5rem;
+		left: 0;
+		
+		width: 100vw;
+		height: 100vh;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+	nav ul li {
+		border-bottom: 1px solid #c03030;
+	}
+	nav ul li:hover > a {
+		background: #ebebeb;
+		box-shadow: 0 0 2rem rgba(0,0,0,0.25) inset;
+	}
+	nav ul li a {
+		width: calc(100vw - 3rem);
+		background: #ffffff;
+		color: #c03030;
+		box-shadow: 0 0 2rem rgba(0,0,0,0.25) inset;
+		text-align: left;
+	}
+	nav ul li ul {
+		position: static;
+		max-height: none;
+	}
+	nav ul li ul li {
+		border-bottom: 0;
+		border-top: 1px solid #c03030;
+	}
+	nav ul li ul li a {
+		padding-left: 4rem;
+	}
+	nav #menuicon {
+		display: none;
+	}
+	div#content {
+		top: 5rem;
+	}
+	div#content div#page {
+		max-height: calc(100vh - 12.5rem);
+	}
+}
+
+@media screen and (max-width: 800px) {
+	html, body {
+		font-size: 50%;
+	}
+	div#content div#page {
+		margin: 0;
+		border: 0;
+		border-bottom: 1px solid #000000;
+		max-height: calc(100vh - 7rem);
+	}
+	div#box div#box-main {
+		top: 0;
+		left: 0;
+		width: 100%;
+		border: 0;
+		border-bottom: 1px solid #000000;
+		overflow-y: scroll;
+		height: 100%;
+	}
+	div#box div#box-main form label {
+		margin: 0;
+		margin-top: 2rem;
+		margin-left: 2rem;
+	}
+	div#box div#box-main form input, div#box div#box-main form select {
+		width: calc(100% - 2rem);
+	}
+	div#cookie_banner {
+		height: 7rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	html, body {
+		font-size: 50%;
+	}
+	form input, form select {
+		width: calc(100% - 2rem);
+	}
+	div#main_center div#content div.editor div.source input.spoiler_source {
+		width: calc(100% - 2rem);
+	}
+	div#content div#page div#calendar table td.top {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	div#content div#page div#calendar table td fieldset {
+		
+	}
+	div#content div#page div#calendar table td fieldset dt {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		width: 5rem;
+	}
+	div#content div#page div#calendar table td fieldset legend p {
+		display: none;
+	}
+}

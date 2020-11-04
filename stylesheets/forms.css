@@ -1,0 +1,163 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* forms.css - Backend-Formulare.
+*/
+
+div#content form {
+	background: #ffffff;
+	border: 1px solid #000000;
+	
+	padding: 1rem;
+}
+
+div#content form.login {
+	display: inline-block;
+	width: 50rem;
+	
+	background: #ababab;
+	border: 1px solid #000000;
+	border-radius: 1rem;
+	
+	padding: 1rem;
+}
+
+div#content form div#progressbar {
+	width: calc(100% - 3rem);
+	margin-left: 1rem;
+	height: 3rem;
+	font-size: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	
+	border-radius: 1rem;
+	border: 1px solid #000000;
+	
+	padding: 0.5rem;
+	
+	background-image: linear-gradient(0, #ababab 0%, #dbdbdb 100%);
+	
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	
+	padding: 0;
+	
+	transition: all 250ms;
+}
+
+div#content form div#progressbar div {
+	width: 0%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border-radius: 1rem;
+}
+
+div#content form div#progressbar div#value_current {
+	background: rgba(0,175,0,0.5);
+}
+
+div#content form.login label {
+	display: inline-block;
+	width: 15rem;
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+div#content form label {
+	display: inline-block;
+	width: 40rem;
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+div#content form.login input[type=text], div#content form.login input[type=password] {
+	display: inline-block;
+	
+	width: 32rem;
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	
+	border-radius: 1rem;
+	border: 1px solid #000000;
+	
+	padding: 0.5rem;
+	
+	background: #ffffff;
+	
+	margin-bottom: 1rem;
+	
+	transition: all 250ms;
+}
+
+div#content form.login input[type=text]:focus, div#content form.login input[type=password]:focus {
+	background: #dbdbdb;
+}
+
+div#content form input[type=text], div#content form input[type=password], div#content form input[type=file], div#content form input[type=date], div#content form input[type=datetime], div#content form select, div#content form textarea {
+	display: inline-block;
+	width: calc(100% - 50rem);
+	
+	background-image: linear-gradient(0, #ababab 0%, #dbdbdb 100%);
+	margin: 1rem;
+	padding: 1rem;
+	border: 1px solid #505050;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	
+	transition: all 250ms;
+}
+
+div#content form textarea {
+	width: calc(100% - 10rem);
+	height: 50rem;
+	display: block;
+}
+
+div#content form input[type=text]:focus, div#content form input[type=password]:focus, div#content form input[type=file]:focus, div#content form input[type=date]:focus, div#content form input[type=datetime]:focus, div#content form select:focus, div#content form textarea:focus {
+	box-shadow: 0 0 0.5rem #505050;
+}
+
+div#content form.login input[type=submit] {
+	width: 48rem;
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	
+	border-radius: 1rem;
+	border: 1px solid #000000;
+	
+	padding: 0.5rem;
+	
+	background: #ffffff;
+	
+	transition: all 250ms;
+}
+
+div#content form.login input[type=submit]:hover {
+	background: #dbdbdb;
+	cursor: pointer;
+}
+
+div#content form input[type=submit], div#content form button, div#content form input[type=button] {
+	display: inline-block;
+	width: calc(100% - 50rem);
+	
+	background-image: linear-gradient(0, #ababab 0%, #dbdbdb 100%);
+	margin: 1rem;
+	padding: 1rem;
+	border: 1px solid #505050;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	
+	transition: all 250ms;
+}
+
+div#content form input[type=submit]:hover, div#content form button:hover,  div#content form input[type=button]:hover {
+	cursor: pointer;
+	
+	box-shadow: 0 0 0.5rem #505050;
+}

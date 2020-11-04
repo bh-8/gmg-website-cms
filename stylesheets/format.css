@@ -1,0 +1,91 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* format.css - Design der Schrift, Überschriften und Links im Backend.
+*/
+
+div#content h1 {
+	text-align: center;
+	font-size: 5rem;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: underline;
+	text-shadow: 0 0 1rem #000000;
+	color: #000000;
+	
+	padding: 0;
+	margin: 1rem;
+}
+
+div#content h2 {
+	text-align: left;
+	font-size: 4rem;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: underline;
+	
+	padding: 0;
+	margin: 0;
+}
+
+div#content h3 {
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'Raleway', sans-serif;
+	
+	padding: 0;
+	margin: 0;
+}
+
+div#content p {
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	
+	padding: 0;
+	margin: 0;
+}
+
+div#content p.description {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+div#content a {
+	font-size: 2rem;
+	font-family: 'Roboto', sans-serif;
+	
+	color: #003366;
+	
+	padding: 0;
+	margin: 0;
+	
+	transition: all 250ms;
+}
+
+div#content a:hover {
+	text-shadow: 0.125rem 0.125rem 0.125rem #000000;
+	
+	cursor: pointer;
+}
+
+div#content i {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+div#content .centered {
+	text-align: center;
+}
+
+div#content .bold {
+	font-weight: bolder;
+}
+
+div#content .underlined {
+	text-decoration: underline;
+}
+
+div#content .marked {
+	color: #c03030;
+}

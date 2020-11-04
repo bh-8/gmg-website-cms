@@ -1,0 +1,109 @@
+/**
+* CMS des GutsMuths Gymnasiums Quedlinburg
+* @author Noah Wiederhold & Bernhard Birnbaum
+* @copyright 2020 Noah Wiederhold & Bernhard Birnbaum
+* @version 1.02.00b
+* 
+* editor.css - Design des Editors und der Menübar im Backend.
+*/
+
+div#content div.editor div.menubar {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+div#content div.editor div.menubar .button i {
+	margin: 0;
+}
+
+div#content div.editor div.menubar .button {
+	color: #003366;
+	height: 4.5rem;
+	min-width: 4.5rem;
+	font-size: 2rem;
+	padding: 1rem;
+	border: 1px solid #000000;
+	border-left: none;
+	
+	transition: all 250ms;
+}
+
+div#main_center div#content div.editor div.menubar select.button {
+	width: calc(20rem - 1px);
+}
+
+div#main_center div#content div.editor div.menubar .button {
+	color: #c03030;
+}
+
+div#content div.editor div.menubar .button:first-child {
+	border: 1px solid #000000;
+}
+
+div#content div.editor div.menubar .button:hover {
+	text-shadow: 0.125rem 0.125rem 0.125rem #000000;
+	
+	cursor: pointer;
+}
+
+div#content div.editor div.edit_area {
+	display: flex;
+	justify-content: center;
+}
+
+div#content div.editor div.edit_area div.edit[contentEditable=true]:empty:not(:focus):before {
+	content: attr(data-text);
+}
+
+div#content div.editor div.edit_area div.edit {
+	background-color: #ffffff;
+	width: calc(100% - 4rem);
+	height: 50rem;
+	padding: 1rem;
+	font-size: 1.5rem;
+	color: #000000;
+	font-family: "Roboto", sans-serif;
+	/*line-height: 1.5em;*/
+	cursor: text;
+	
+	margin: 2rem;
+	margin-top: 1rem;
+	
+	border: 1px solid #000000;
+	overflow: auto;
+}
+
+div#content div.editor div.edit_area div.edit i {
+	margin: 0;
+}
+
+div#content div.editor div.source {
+	transition: all 250ms;
+}
+
+div#content div.editor div.source input.spoiler_source {
+	width: calc(100% - 10rem);
+}
+
+div#main_center div#content div.editor div.source input.spoiler_source {
+	width: calc(100% - 8rem);
+}
+
+div#content div.editor div.source textarea {
+	background-color: #ffffff;
+	width: calc(100% - 6rem);
+	height: 0;
+	padding: 1rem;
+	font-size: 1.5rem;
+	color: #000000;
+	resize: none;
+	transition: all 250ms;
+	opacity: 0;
+	
+	margin: 1rem;
+	
+	border: 1px solid #000000;
+}
