@@ -13,10 +13,10 @@
 ////////////////////////////////////////  
 	
 	//Konstanten für die SQL-Verbindung
-	$SQL_SERVER="192.168.205.72";
-	$SQL_USERNAME="gmg2";
-	$SQL_PASSWORD="uyi-C7T2*Zv$";
-	$SQL_DBNAME="gmg2_test";
+	$SQL_SERVER="SQL_SERVER_DOMAIN";
+	$SQL_USERNAME="SQL_CREDENTIALS_USERNAME";
+	$SQL_PASSWORD="SQL_CREDENTIALS_PASSWORD";
+	$SQL_DBNAME="SQL_DATABASE_NAME";
 	
 	//Debugging Logger.
 	class DEBUGGING_LOGGER {
