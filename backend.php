@@ -1453,7 +1453,7 @@ switch($PARAM_PAGE) {
 $BODY->ADD_SOURCE("<div class=\"backend\" id=\"box\"></div>");
 
 //Ausgabe Credits
-echo "<!--\nCMS des GutsMuths Gymnasiums Quedlinburg\n@author Noah Wiederhold & Bernhard Birnbaum\n@copyright 2020 Noah Wiederhold & Bernhard Birnbaum\n@version 1.00.00\n-->\n";
+echo "<!--\nCMS des GutsMuths Gymnasiums Quedlinburg\n@author Noah Wiederhold & Bernhard Birnbaum\n@copyright 2020 Noah Wiederhold & Bernhard Birnbaum\n@version 1.02.00b\n-->\n";
 
 //Ausgabe der Daten.
 echo "<html lang=\"de\">";
